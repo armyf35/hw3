@@ -121,7 +121,7 @@ function calculate(op = operation) {
         case 'log':
             numberField.innerText = Math.log(firstNumber) / Math.log(10);
             break;
-        case '×': // multiple
+        case '×':
             numberField.innerText = parseFloat(firstNumber) * parseFloat(secondNumber);
             break;
         case 'tan':
@@ -143,6 +143,3 @@ function calculate(op = operation) {
     currentState = 'calculated';
     resetOperationButton();
 };
-
-// Store current ticket before setting an operation
-// Seperate between single parameter and double parameter operations
